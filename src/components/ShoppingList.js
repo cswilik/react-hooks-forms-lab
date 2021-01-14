@@ -5,7 +5,7 @@ import Item from "./Item";
 
 function ShoppingList({ items, onItemFormSubmit }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
-  const [search, setSearch] = useState("All")
+  const [search, setSearch] = useState("")
 
   function handleCategoryChange(event) {
     setSelectedCategory(event.target.value);
